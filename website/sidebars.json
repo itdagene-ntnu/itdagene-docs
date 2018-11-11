@@ -6,7 +6,9 @@
     "Infrastruktur": [
       "infra/home",
       "infra/servers",
-      "infra/kubernetes"
+      "infra/docker",
+      "infra/circleci",
+      "infra/backup"
     ]
   }
 }
