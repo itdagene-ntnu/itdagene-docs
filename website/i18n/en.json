@@ -11,6 +11,15 @@
       "doc3": {
         "title": "This is document number 3"
       },
+      "infra/backup": {
+        "title": "Backup"
+      },
+      "infra/circleci": {
+        "title": "CircleCi"
+      },
+      "infra/docker": {
+        "title": "Docker"
+      },
       "infra/home": {
         "title": "Home"
       },

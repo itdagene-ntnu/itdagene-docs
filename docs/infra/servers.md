@@ -3,8 +3,19 @@ id: servers
 title: Servers
 ---
 
-### sarlacc.abakus.no (itdagene19)
-- ssh sarlacc.abakus.no -l itdagene19
+## rancor.abakus.no (itdagene19)
 
-### itdagene.abakus.no (old)
+All itDAGENE virtual machines are running on the server `rancor`.
+- ssh rancor.abakus.no
 
+Virtual machines
+- ubuntu@itdagene.abakus.no (2018)
+  Users:
+  - root
+  - ubuntu
+  - itdagene
+
+- itdagene19@itdagene.no (2019)
+  Users:
+  - root
+  - itdagene19
