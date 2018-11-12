@@ -4,8 +4,6 @@ title: Webapp
 sidebar_label: Frontend
 ---
 
-# itDAGENE-webapp
-
 > nextgen itDAGENE frontend
 
 ![Picture of the page](/img/webapp.png)

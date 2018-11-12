@@ -3,7 +3,7 @@ id: backup
 title: Backup
 ---
 
-## Backup
+Taking backups are importart for itdagene as we store lots of information in our database and as static files. We use `cron` jobs to run backups at set intervals, and push them to `backblaze`.
 
 ### cron daemon
 We do are large backup at 02:00 every day. This is done using `cron` job. Currently the cron job runs the `backup.sh` script which is located at `/home/itdagene19/infra/backup.sh`.

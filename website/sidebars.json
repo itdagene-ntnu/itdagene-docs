@@ -1,25 +1,53 @@
 {
-  "scripts": {
-    "Scripts": ["scripts"]
-  },
   "website": {
     "Website": [
       "website/frontend",
       "website/backend"
-    ]
-  },
-  "infrastruktur": {
+    ],
     "Infrastruktur": [
       "infra/servers",
       "infra/docker",
       "infra/circleci",
       "infra/backup"
+    ],
+    "Utils": [
+      "utils/voucher",
+      "utils/itbot",
+      "utils/scripts"
+    ]
+  },
+  "infrastruktur": {
+    "Website": [
+      "website/frontend",
+      "website/backend"
+    ],
+    "Infrastruktur": [
+      "infra/servers",
+      "infra/docker",
+      "infra/circleci",
+      "infra/backup"
+    ],
+    "Utils": [
+      "utils/voucher",
+      "utils/itbot",
+      "utils/scripts"
     ]
   },
   "utils": {
+    "Website": [
+      "website/frontend",
+      "website/backend"
+    ],
+    "Infrastruktur": [
+      "infra/servers",
+      "infra/docker",
+      "infra/circleci",
+      "infra/backup"
+    ],
     "Utils": [
       "utils/voucher",
-      "utils/itbot"
+      "utils/itbot",
+      "utils/scripts"
     ]
   }
 }

@@ -40,8 +40,7 @@ const siteConfig = {
   headerLinks: [
     { doc: "website/frontend", label: "Website"},
     { doc: "infra/servers", label: "Infrastructure" },
-    { doc: "utils/voucher", label: "Utils" },
-    { doc: "scripts", label: "Scripts" },
+    { doc: "utils/voucher", label: "Utils" }
   ],
 
   // If you have users set above, you add it here:

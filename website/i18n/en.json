@@ -17,13 +17,13 @@
       "infra/servers": {
         "title": "Servers"
       },
-      "scripts": {
-        "title": "Cool scripts",
-        "sidebar_label": "Cool scripts"
-      },
       "utils/itbot": {
         "title": "Slack bot for itDagene",
         "sidebar_label": "Slack bot"
+      },
+      "utils/scripts": {
+        "title": "Cool scripts",
+        "sidebar_label": "Scripts"
       },
       "utils/voucher": {
         "title": "Voucher-Generator",
@@ -40,11 +40,9 @@
     "links": {
       "Website": "Website",
       "Infrastructure": "Infrastructure",
-      "Utils": "Utils",
-      "Scripts": "Scripts"
+      "Utils": "Utils"
     },
     "categories": {
-      "Scripts": "Scripts",
       "Website": "Website",
       "Infrastruktur": "Infrastruktur",
       "Utils": "Utils"

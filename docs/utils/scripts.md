@@ -1,7 +1,7 @@
 ---
 id: scripts
 title: Cool scripts
-sidebar_label: Cool scripts
+sidebar_label: Scripts
 ---
 
 ## Download all the company logos

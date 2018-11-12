@@ -3,6 +3,8 @@ id: docker
 title: Docker
 ---
 
+Docker is a computer program that performs operating-system-level virtualization, also known as containerization. We use it to dockerize our different systems and let the run independently of each other, only talking through set ports.
+
 ## Images
 Itdagene DevOps revolve around docker images, both generic and self written. When everything is up and running all images should be running. All images are hosted at dockerhub (https://hub.docker.com/).
 Current images
