@@ -2,13 +2,24 @@
   "scripts": {
     "Scripts": ["scripts"]
   },
+  "website": {
+    "Website": [
+      "website/frontend",
+      "website/backend"
+    ]
+  },
   "infrastruktur": {
     "Infrastruktur": [
-      "infra/home",
       "infra/servers",
       "infra/docker",
       "infra/circleci",
       "infra/backup"
+    ]
+  },
+  "utils": {
+    "Utils": [
+      "utils/voucher",
+      "utils/itbot"
     ]
   }
 }

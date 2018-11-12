@@ -3,9 +3,7 @@ id: docker
 title: Docker
 ---
 
-## Docker
-
-### Images
+## Images
 Itdagene DevOps revolve around docker images, both generic and self written. When everything is up and running all images should be running. All images are hosted at dockerhub (https://hub.docker.com/).
 Current images
 - `itdagene` backend 
@@ -32,7 +30,7 @@ postgres:10.5-alpine           "docker-entrypoint.s…"   5432/tcp              
 redis:latest                   "docker-entrypoint.s…"   6379/tcp                    infra_redis_1
 ```
 
-### docker-compose
+## docker-compose
 When starting and stopping itdagene we use something called docker-compose, which allowes us to state which services should run, and what variables, ports, and other configs should run. This is much more convient then starting and stopping each image, and applying configurations each time.
 
 ```zsh

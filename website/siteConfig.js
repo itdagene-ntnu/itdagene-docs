@@ -38,10 +38,10 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
+    { doc: "website/frontend", label: "Website"},
+    { doc: "infra/servers", label: "Infrastructure" },
+    { doc: "utils/voucher", label: "Utils" },
     { doc: "scripts", label: "Scripts" },
-    { doc: "infra/home", label: "Infrastructure" },
-    { page: "help", label: "Help" },
-    { blog: true, label: "Blog" }
   ],
 
   // If you have users set above, you add it here:

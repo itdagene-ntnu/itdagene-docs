@@ -4,8 +4,6 @@ title: Cool scripts
 sidebar_label: Cool scripts
 ---
 
-# Awesome scripts
-
 ## Download all the company logos
 
 ```bash
