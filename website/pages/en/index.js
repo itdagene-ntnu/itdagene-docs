@@ -16,7 +16,6 @@ const GridBlock = CompLibrary.GridBlock;
 const siteConfig = require(`${process.cwd()}/siteConfig.js`);
 
 function imgUrl(img) {
-  return  "https://itdagene.no/static/itdagene-gray2.png"
   return `${siteConfig.baseUrl}img/${img}`;
 }
 
@@ -53,7 +52,10 @@ const SplashContainer = props => (
 );
 
 const Logo = props => (
-  <div className="projectLogo">
+  <div className="projectLogo" style={{
+    justifyContent: 'center !important',
+    height: '200px'
+    }}>
     <img src={props.img_src} alt="Project Logo" />
   </div>
 );
@@ -78,14 +80,12 @@ class HomeSplash extends React.Component {
     const language = this.props.language || '';
     return (
       <SplashContainer>
-        <Logo img_src={imgUrl('docusaurus.svg')} />
+        <Logo img_src={'/img/itdagene-grey.png'} />
         <div className="inner">
-          <ProjectTitle />
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
+          {/*<PromoSection>
             <Button href={docUrl('doc1.html', language)}>Example Link</Button>
             <Button href={docUrl('doc2.html', language)}>Example Link 2</Button>
-          </PromoSection>
+          </PromoSection>*/}
         </div>
       </SplashContainer>
     );
@@ -105,16 +105,70 @@ const Features = () => (
   <Block layout="fourColumn">
     {[
       {
-        content: 'This is the content of my feature',
-        image: imgUrl('docusaurus.svg'),
+        content: '',
+        image: imgUrl('graphql.svg'),
         imageAlign: 'top',
-        title: 'Feature One',
+        title: 'GraphQL',
       },
       {
-        content: 'The content of my second feature',
-        image: imgUrl('docusaurus.svg'),
+        content: '',
+        image: imgUrl('django.jpg'),
         imageAlign: 'top',
-        title: 'Feature Two',
+        title: 'Django',
+      },      
+      {
+        content: '',
+        image: imgUrl('hubot.png'),
+        imageAlign: 'top',
+        title: 'Hubot',
+      },
+      {
+        content: '',
+        image: imgUrl('postgres.png'),
+        imageAlign: 'top',
+        title: 'PostgreSQL',
+      },
+      {
+        content: '',
+        image: imgUrl('redis.png'),
+        imageAlign: 'top',
+        title: 'Redis',
+      },
+      {
+        content: '',
+        image: imgUrl('traefik.svg'),
+        imageAlign: 'top',
+        title: 'Traefik',
+      },
+      {
+        content: '',
+        image: imgUrl('nginx.png'),
+        imageAlign: 'top',
+        title: 'Nginx',
+      },
+      {
+        content: '',
+        image: imgUrl('metabase.png'),
+        imageAlign: 'top',
+        title: 'Metabase',
+      },
+      {
+        content: '',
+        image: imgUrl('backblaze.png'),
+        imageAlign: 'top',
+        title: 'Backblaze',
+      },
+      {
+        content: '',
+        image: imgUrl('cloudflare.png'),
+        imageAlign: 'top',
+        title: 'Cloudflare',
+      },
+      {
+        content: '',
+        image: imgUrl('docker.png'),
+        imageAlign: 'top',
+        title: 'Docker',
       },
     ]}
   </Block>
@@ -193,20 +247,21 @@ const Showcase = props => {
   );
 };
 
+
+// Frontpage component
 class Index extends React.Component {
   render() {
     const language = this.props.language || '';
-
     return (
       <div>
         <HomeSplash language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase language={language} />
+          {/*<FeatureCallout />*/}
+          {/*<LearnHow />*/}
+          {/*<TryOut />*/}
+          {/*<Description />*/}
+          {/*<Showcase language={language} />*/}
         </div>
       </div>
     );

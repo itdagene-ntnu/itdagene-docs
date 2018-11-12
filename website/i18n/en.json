@@ -5,12 +5,6 @@
     "previous": "Previous",
     "tagline": "itDAGENE",
     "docs": {
-      "doc2": {
-        "title": "document number 2"
-      },
-      "doc3": {
-        "title": "This is document number 3"
-      },
       "infra/backup": {
         "title": "Backup"
       },
@@ -20,26 +14,40 @@
       "infra/docker": {
         "title": "Docker"
       },
-      "infra/home": {
-        "title": "Home"
-      },
       "infra/servers": {
         "title": "Servers"
       },
       "scripts": {
         "title": "Cool scripts",
         "sidebar_label": "Cool scripts"
+      },
+      "utils/itbot": {
+        "title": "Slack bot for itDagene",
+        "sidebar_label": "Slack bot"
+      },
+      "utils/voucher": {
+        "title": "Voucher-Generator",
+        "sidebar_label": "Voucher"
+      },
+      "website/backend": {
+        "title": "Backend"
+      },
+      "website/frontend": {
+        "title": "Webapp",
+        "sidebar_label": "Frontend"
       }
     },
     "links": {
-      "Scripts": "Scripts",
+      "Website": "Website",
       "Infrastructure": "Infrastructure",
-      "Help": "Help",
-      "Blog": "Blog"
+      "Utils": "Utils",
+      "Scripts": "Scripts"
     },
     "categories": {
       "Scripts": "Scripts",
-      "Infrastruktur": "Infrastruktur"
+      "Website": "Website",
+      "Infrastruktur": "Infrastruktur",
+      "Utils": "Utils"
     }
   },
   "pages-strings": {
