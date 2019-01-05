@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "description": "Documentation for all itdagene related services",
   "license": "MIT",
+  "contributors": [
+    {
+      "name": "Peder Smith",
+      "email": "smithpeder@gamil.com"
+    },
+    {
+      "name": "Odin Ugedal",
+      "email": "odin@ugedal.com"
+    }
+  ],
   "scripts": {
     "examples": "docusaurus-examples",
     "start": "docusaurus-start",
@@ -23,6 +33,7 @@
     "eslint-config-react-app": "^3.0.6",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "6",
+    "eslint-plugin-react": "^7.12.3",
     "prettier": "1.15.3"
   },
   "prettier": {
