@@ -21,24 +21,18 @@ const users = [
 ];
 
 const siteConfig = {
-  title: "itDAGENE", // Title for your website.
+  title: "Documentation", // Title for your website.
   tagline: "itDAGENE",
-  url: "https://your-docusaurus-test-site.com", // Your website URL
+  url: "https://itdagene.no", // Your website URL
   baseUrl: "/", // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
 
   // Used for publishing and more
   projectName: "docs",
   organizationName: "itDAGENE",
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: "website/frontend", label: "Website"},
+    { doc: "website/frontend", label: "Website" },
     { doc: "infra/servers", label: "Infrastructure" },
     { doc: "utils/voucher", label: "Utils" }
   ],
@@ -47,14 +41,14 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: "img/docusaurus.svg",
-  footerIcon: "img/docusaurus.svg",
-  favicon: "img/favicon.png",
+  headerIcon: "img/itdagene-white.png",
+  footerIcon: "img/icon-48x48.png",
+  favicon: "img/icon-48x48.png",
 
   /* Colors for website */
   colors: {
-    primaryColor: "#2E8555",
-    secondaryColor: "#205C3B"
+    primaryColor: "#327cb1",
+    secondaryColor: "#327cb1"
   },
 
   /* Custom fonts for website */

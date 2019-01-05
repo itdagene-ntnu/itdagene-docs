@@ -118,6 +118,12 @@ const Features = () => (
       },      
       {
         content: '',
+        image: imgUrl('node.png'),
+        imageAlign: 'top',
+        title: 'NodeJS',
+      },  
+      {
+        content: '',
         image: imgUrl('hubot.png'),
         imageAlign: 'top',
         title: 'Hubot',

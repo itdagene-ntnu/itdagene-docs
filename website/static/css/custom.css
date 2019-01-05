@@ -14,3 +14,14 @@
 
 @media only screen and (min-width: 1500px) {
 }
+
+/* support images of different size*/
+.imageAlignTop .blockImage {
+  height: 100px;
+}
+
+/* center text and image in header */
+.fixedHeaderContainer header .headerTitleWithLogo {
+  margin: auto;
+  margin-top: 10px;
+}
