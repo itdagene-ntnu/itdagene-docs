@@ -41,7 +41,7 @@ jobs:
     steps:
       - checkout
       - run: |
-        docker build -t smithpeder/itdagene-docs:latest .
+          docker build -t smithpeder/itdagene-docs:latest .
 
 workflows:
   version: 2
