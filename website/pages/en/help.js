@@ -7,9 +7,11 @@
 
 const React = require('react');
 
-// const CompLibrary = require('../../core/CompLibrary.js');
-// const Container = CompLibrary.Container;
-// const GridBlock = CompLibrary.GridBlock;
+const CompLibrary = require('../../core/CompLibrary.js');
+// eslint-disable-next-line no-unused-vars
+const Container = CompLibrary.Container;
+// eslint-disable-next-line no-unused-vars
+const GridBlock = CompLibrary.GridBlock;
 
 const siteConfig = require(`${process.cwd()}/siteConfig.js`);
 
