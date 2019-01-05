@@ -36,18 +36,26 @@ redis:latest                   "docker-entrypoint.s…"   6379/tcp              
 When starting and stopping itdagene we use something called docker-compose, which allowes us to state which services should run, and what variables, ports, and other configs should run. This is much more convient then starting and stopping each image, and applying configurations each time.
 
 ```zsh
+# Look for containers running with this docker-compose config
+$ docker-compose ps
+
 # Start all containers
 $ docker-compose up -d
 
 # Stop all containes
 $ docker-compose kill
+$ docker-compose down
 
-# Restart all containers
+# Restart all containers when they are running
 $ docker-compose up -d --force-recreate
 
-# Restart one container
-$ docker-compose up -d --force-recreate webapp
+# Restart one container when it's running
+$ docker-compose up -d --force-recreate <service>
 ```
 
-
-
+If you've written some new code and the image is up on _hub.docker.io_ you can pull that new image and recreate that container without running a full reboot of all containers.
+```zsh
+$ docker-compose pull <service> # Pull the new version of the image
+$ docker-compose up -d --force-recreate <service> # Recreate the container
+```
+> You can find the name of a service by looking for the spesific entry in the `docker-compose` file.
