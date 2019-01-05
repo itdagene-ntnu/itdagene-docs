@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  codetest:
+  tests:
     docker:
       - image: circleci/node:latest-browsers
     working_directory: ~/repo
@@ -40,8 +40,8 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: |
-        docker build .
+      - run:
+        command: docker build .
 
 workflows:
   version: 2
