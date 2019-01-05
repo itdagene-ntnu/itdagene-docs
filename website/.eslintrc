@@ -16,6 +16,8 @@
   "env": {
     "jest": true,
     "browser": true,
+    "node": true,
+    "amd": true,
     "es6": true
   },
   "parserOptions": {

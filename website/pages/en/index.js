@@ -8,9 +8,11 @@
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
+//const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 
-const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
+// eslint-disable-next-line no-unused-vars
 const Container = CompLibrary.Container;
+// eslint-disable-next-line no-unused-vars
 const GridBlock = CompLibrary.GridBlock;
 
 const siteConfig = require(`${process.cwd()}/siteConfig.js`);
@@ -19,13 +21,13 @@ function imgUrl(img) {
   return `${siteConfig.baseUrl}img/${img}`;
 }
 
-function docUrl(doc, language) {
-  return `${siteConfig.baseUrl}docs/${language ? `${language}/` : ''}${doc}`;
-}
+/* function docUrl(doc, language) {
+  return `${siteConfig.bRseUrl}docs/${language ? `${language}/` : ''}${doc}`;
+} */
 
-function pageUrl(page, language) {
+/* function pageUrl(page, language) {
   return siteConfig.baseUrl + (language ? `${language}/` : '') + page;
-}
+} */
 
 class Button extends React.Component {
   render() {
@@ -43,6 +45,7 @@ Button.defaultProps = {
   target: '_self'
 };
 
+// eslint-disable-next-line no-unused-vars
 const SplashContainer = props => (
   <div className="homeContainer">
     <div className="homeSplashFade">
@@ -51,6 +54,7 @@ const SplashContainer = props => (
   </div>
 );
 
+// eslint-disable-next-line no-unused-vars
 const Logo = props => (
   <div
     className="projectLogo"
@@ -63,38 +67,33 @@ const Logo = props => (
   </div>
 );
 
-const ProjectTitle = () => (
+/* const ProjectTitle = () => (
   <h2 className="projectTitle">
     {siteConfig.title}
     <small>{siteConfig.tagline}</small>
   </h2>
-);
+); */
 
-const PromoSection = props => (
+/* const PromoSection = props => (
   <div className="section promoSection">
     <div className="promoRow">
       <div className="pluginRowBlock">{props.children}</div>
     </div>
   </div>
-);
+); */
 
+// eslint-disable-next-line no-unused-vars
 class HomeSplash extends React.Component {
   render() {
-    const language = this.props.language || '';
     return (
       <SplashContainer>
         <Logo img_src={'/img/itdagene-grey.png'} />
-        <div className="inner">
-          {/*<PromoSection>
-            <Button href={docUrl('doc1.html', language)}>Example Link</Button>
-            <Button href={docUrl('doc2.html', language)}>Example Link 2</Button>
-          </PromoSection>*/}
-        </div>
       </SplashContainer>
     );
   }
 }
 
+// eslint-disable-next-line no-unused-vars
 const Block = props => (
   <Container
     padding={['bottom', 'top']}
@@ -105,6 +104,7 @@ const Block = props => (
   </Container>
 );
 
+// eslint-disable-next-line no-unused-vars
 const Features = () => (
   <Block layout="fourColumn">
     {[
@@ -184,7 +184,7 @@ const Features = () => (
   </Block>
 );
 
-const FeatureCallout = () => (
+/* const FeatureCallout = () => (
   <div
     className="productShowcaseSection paddingBottom"
     style={{ textAlign: 'center' }}
@@ -192,9 +192,9 @@ const FeatureCallout = () => (
     <h2>Feature Callout</h2>
     <MarkdownBlock>These are features of this project</MarkdownBlock>
   </div>
-);
+); */
 
-const LearnHow = () => (
+/* const LearnHow = () => (
   <Block background="light">
     {[
       {
@@ -205,9 +205,9 @@ const LearnHow = () => (
       }
     ]}
   </Block>
-);
+); */
 
-const TryOut = () => (
+/* const TryOut = () => (
   <Block id="try">
     {[
       {
@@ -218,9 +218,9 @@ const TryOut = () => (
       }
     ]}
   </Block>
-);
+); */
 
-const Description = () => (
+/* const Description = () => (
   <Block background="dark">
     {[
       {
@@ -231,9 +231,9 @@ const Description = () => (
       }
     ]}
   </Block>
-);
+); */
 
-const Showcase = props => {
+/* const Showcase = props => {
   if ((siteConfig.users || []).length === 0) {
     return null;
   }
@@ -258,7 +258,7 @@ const Showcase = props => {
       </div>
     </div>
   );
-};
+}; */
 
 // Frontpage component
 class Index extends React.Component {
