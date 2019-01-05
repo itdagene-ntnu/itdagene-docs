@@ -12,6 +12,7 @@ jobs:
             - deps-{{ checksum "yarn.lock" }}
       - run:
           name: Install dependencies
+          path: website
           command: yarn
 
       - save_cache:
