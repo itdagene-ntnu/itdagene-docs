@@ -3,8 +3,11 @@ MAINTAINER Peder Smith <smithpeder@gmail.com>
 
 WORKDIR /app
 
-COPY website/package.json .
-COPY website/yarn.lock .
+COPY website/package.json website/
+COPY website/yarn.lock website/
+
+WORKDIR /app/website
+
 RUN yarn --ignore-scripts
 
 COPY ./docs /app/docs
@@ -14,8 +17,4 @@ RUN yarn build
 FROM node:alpine
 MAINTAINER Peder Smith <smithpeder@gmail.com>
 
-WORKDIR /app
-COPY --from=builder /app/package.json .
-COPY --from=builder /app/yarn.lock .
-
-CMD [ "yarn", "start"]
+COPY --from=builder /app/website/build .
