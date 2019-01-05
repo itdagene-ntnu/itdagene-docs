@@ -48,7 +48,7 @@ workflows:
   on_push:
     jobs:
       - tests
-      - build-docker:
+      - build:
           requires:
             - tests
           filters:
