@@ -11,13 +11,16 @@ jobs:
           keys:
             - deps-{{ checksum "yarn.lock" }}
       - run:
-          name: install dependencies
-          command: |
-            yarn
+          name: Install dependencies
+          command: yarn
 
       - save_cache:
+          name: Save cache
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "website/package.json" }}
         
-      - run: yarn build
+      - run: 
+          name: Build project
+          path: website
+          command: yarn build
