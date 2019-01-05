@@ -40,7 +40,7 @@ class Button extends React.Component {
 }
 
 Button.defaultProps = {
-  target: '_self',
+  target: '_self'
 };
 
 const SplashContainer = props => (
@@ -52,10 +52,13 @@ const SplashContainer = props => (
 );
 
 const Logo = props => (
-  <div className="projectLogo" style={{
-    justifyContent: 'center !important',
-    height: '200px'
-    }}>
+  <div
+    className="projectLogo"
+    style={{
+      justifyContent: 'center !important',
+      height: '200px'
+    }}
+  >
     <img src={props.img_src} alt="Project Logo" />
   </div>
 );
@@ -96,7 +99,8 @@ const Block = props => (
   <Container
     padding={['bottom', 'top']}
     id={props.id}
-    background={props.background}>
+    background={props.background}
+  >
     <GridBlock align="center" contents={props.children} layout={props.layout} />
   </Container>
 );
@@ -108,74 +112,74 @@ const Features = () => (
         content: '',
         image: imgUrl('graphql.svg'),
         imageAlign: 'top',
-        title: 'GraphQL',
+        title: 'GraphQL'
       },
       {
         content: '',
         image: imgUrl('django.jpg'),
         imageAlign: 'top',
-        title: 'Django',
-      },      
+        title: 'Django'
+      },
       {
         content: '',
         image: imgUrl('node.png'),
         imageAlign: 'top',
-        title: 'NodeJS',
-      },  
+        title: 'NodeJS'
+      },
       {
         content: '',
         image: imgUrl('hubot.png'),
         imageAlign: 'top',
-        title: 'Hubot',
+        title: 'Hubot'
       },
       {
         content: '',
         image: imgUrl('postgres.png'),
         imageAlign: 'top',
-        title: 'PostgreSQL',
+        title: 'PostgreSQL'
       },
       {
         content: '',
         image: imgUrl('redis.png'),
         imageAlign: 'top',
-        title: 'Redis',
+        title: 'Redis'
       },
       {
         content: '',
         image: imgUrl('traefik.svg'),
         imageAlign: 'top',
-        title: 'Traefik',
+        title: 'Traefik'
       },
       {
         content: '',
         image: imgUrl('nginx.png'),
         imageAlign: 'top',
-        title: 'Nginx',
+        title: 'Nginx'
       },
       {
         content: '',
         image: imgUrl('metabase.png'),
         imageAlign: 'top',
-        title: 'Metabase',
+        title: 'Metabase'
       },
       {
         content: '',
         image: imgUrl('backblaze.png'),
         imageAlign: 'top',
-        title: 'Backblaze',
+        title: 'Backblaze'
       },
       {
         content: '',
         image: imgUrl('cloudflare.png'),
         imageAlign: 'top',
-        title: 'Cloudflare',
+        title: 'Cloudflare'
       },
       {
         content: '',
         image: imgUrl('docker.png'),
         imageAlign: 'top',
-        title: 'Docker',
-      },
+        title: 'Docker'
+      }
     ]}
   </Block>
 );
@@ -183,7 +187,8 @@ const Features = () => (
 const FeatureCallout = () => (
   <div
     className="productShowcaseSection paddingBottom"
-    style={{textAlign: 'center'}}>
+    style={{ textAlign: 'center' }}
+  >
     <h2>Feature Callout</h2>
     <MarkdownBlock>These are features of this project</MarkdownBlock>
   </div>
@@ -196,8 +201,8 @@ const LearnHow = () => (
         content: 'Talk about learning how to use this',
         image: imgUrl('docusaurus.svg'),
         imageAlign: 'right',
-        title: 'Learn How',
-      },
+        title: 'Learn How'
+      }
     ]}
   </Block>
 );
@@ -209,8 +214,8 @@ const TryOut = () => (
         content: 'Talk about trying this out',
         image: imgUrl('docusaurus.svg'),
         imageAlign: 'left',
-        title: 'Try it Out',
-      },
+        title: 'Try it Out'
+      }
     ]}
   </Block>
 );
@@ -222,8 +227,8 @@ const Description = () => (
         content: 'This is another description of how this project is useful',
         image: imgUrl('docusaurus.svg'),
         imageAlign: 'right',
-        title: 'Description',
-      },
+        title: 'Description'
+      }
     ]}
   </Block>
 );
@@ -233,11 +238,13 @@ const Showcase = props => {
     return null;
   }
 
-  const showcase = siteConfig.users.filter(user => user.pinned).map(user => (
-    <a href={user.infoLink} key={user.infoLink}>
-      <img src={user.image} alt={user.caption} title={user.caption} />
-    </a>
-  ));
+  const showcase = siteConfig.users
+    .filter(user => user.pinned)
+    .map(user => (
+      <a href={user.infoLink} key={user.infoLink}>
+        <img src={user.image} alt={user.caption} title={user.caption} />
+      </a>
+    ));
 
   return (
     <div className="productShowcaseSection paddingBottom">
@@ -252,7 +259,6 @@ const Showcase = props => {
     </div>
   );
 };
-
 
 // Frontpage component
 class Index extends React.Component {

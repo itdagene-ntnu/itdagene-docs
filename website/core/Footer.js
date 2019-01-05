@@ -38,7 +38,7 @@ class Footer extends React.Component {
               Check out how the website is build.
             </a>
             <a href={this.docUrl('infras/servers', this.props.language)}>
-              Learn about the development operations.  
+              Learn about the development operations.
             </a>
             <a href={this.docUrl('utils/voucher', this.props.language)}>
               Explore other services
@@ -54,18 +54,20 @@ class Footer extends React.Component {
               data-count-href="/facebook/docusaurus/stargazers"
               data-show-count="true"
               data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub">
+              aria-label="Star this project on GitHub"
+            >
               Webapp
-             </a>
-             <br></br>
-             <a
+            </a>
+            <br />
+            <a
               className="github-button"
               href="https://github.com/itdagene-ntnu/itdagene"
               data-icon="octicon-star"
               data-count-href="/facebook/docusaurus/stargazers"
               data-show-count="true"
               data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub">
+              aria-label="Star this project on GitHub"
+            >
               Backend
             </a>
           </div>

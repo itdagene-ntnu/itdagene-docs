@@ -11,44 +11,44 @@
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: "User1",
+    caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: "/img/docusaurus.svg",
-    infoLink: "https://www.facebook.com",
+    image: '/img/docusaurus.svg',
+    infoLink: 'https://www.facebook.com',
     pinned: true
   }
 ];
 
 const siteConfig = {
-  title: "Documentation", // Title for your website.
-  tagline: "itDAGENE",
-  url: "https://itdagene.no", // Your website URL
-  baseUrl: "/", // Base URL for your project */
+  title: 'Documentation', // Title for your website.
+  tagline: 'itDAGENE',
+  url: 'https://itdagene.no', // Your website URL
+  baseUrl: '/', // Base URL for your project */
 
   // Used for publishing and more
-  projectName: "docs",
-  organizationName: "itDAGENE",
+  projectName: 'docs',
+  organizationName: 'itDAGENE',
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: "website/frontend", label: "Website" },
-    { doc: "infra/servers", label: "Infrastructure" },
-    { doc: "utils/voucher", label: "Utils" }
+    { doc: 'website/frontend', label: 'Website' },
+    { doc: 'infra/servers', label: 'Infrastructure' },
+    { doc: 'utils/voucher', label: 'Utils' }
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: "img/itdagene-white.png",
-  footerIcon: "img/icon-48x48.png",
-  favicon: "img/icon-48x48.png",
+  headerIcon: 'img/itdagene-white.png',
+  footerIcon: 'img/icon-48x48.png',
+  favicon: 'img/icon-48x48.png',
 
   /* Colors for website */
   colors: {
-    primaryColor: "#327cb1",
-    secondaryColor: "#327cb1"
+    primaryColor: '#327cb1',
+    secondaryColor: '#327cb1'
   },
 
   /* Custom fonts for website */
@@ -70,20 +70,20 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: "default"
+    theme: 'default'
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ["https://buttons.github.io/buttons.js"],
+  scripts: ['https://buttons.github.io/buttons.js'],
 
   // On page navigation for the current documentation page.
-  onPageNav: "separate",
+  onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  ogImage: "https://itdagene.no/static/itdagene-gray2.png",
-  twitterImage: "https://itdagene.no/static/itdagene-gray2.png"
+  ogImage: 'https://itdagene.no/static/itdagene-gray2.png',
+  twitterImage: 'https://itdagene.no/static/itdagene-gray2.png'
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
