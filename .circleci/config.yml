@@ -20,7 +20,17 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "website/package.json" }}
-        
+      
+      - run:
+          name: Prettier
+          path: website
+          command: yarn lint:prettier
+
+      - run:
+          name: Eslint
+          path: website
+          command: yarn lint:eslint
+
       - run: 
           name: Build project
           path: website

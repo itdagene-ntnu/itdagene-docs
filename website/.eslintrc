@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "globals": {
+    "log": true,
+    "expect": true,
+    "page": true,
+    "browser": true,
+  },
+  "env": {
+    "jest": true,
+    "browser": true
+  }
+}
