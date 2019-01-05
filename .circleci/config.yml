@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  codetest:
     docker:
       - image: circleci/node:latest-browsers
     working_directory: ~/repo
@@ -35,3 +35,23 @@ jobs:
           name: Build project
           path: website
           command: yarn build
+
+  build:
+    machine: true
+    steps:
+      - checkout
+      - run: |
+        docker build .
+
+workflows:
+  version: 2
+  on_push:
+    jobs:
+      - tests
+      - build-docker:
+          requires:
+            - tests
+          filters:
+            branches:
+              only:
+                - prod
