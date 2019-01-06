@@ -16,7 +16,7 @@ RUN yarn build
 FROM node:alpine
 MAINTAINER Peder Smith <smithpeder@gmail.com>
 
-COPY --from=builder /app/package.json .
-COPY --from=builder /app/yarn.lock .
+COPY --from=builder /app/website/package.json .
+COPY --from=builder /app/website/yarn.lock .
 COPY --from=builder /app/website/build .
 RUN yarn --prod
