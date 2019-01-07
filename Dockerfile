@@ -1,22 +1,10 @@
-FROM node:alpine as builder
-
-WORKDIR /app
-
-COPY website/package.json website/
-COPY website/yarn.lock website/
+FROM node:8.11.4
 
 WORKDIR /app/website
 
-RUN yarn --ignore-scripts
-
+EXPOSE 3000 35729
 COPY ./docs /app/docs
 COPY ./website /app/website
-RUN yarn build
+RUN yarn install
 
-FROM node:alpine
-MAINTAINER Peder Smith <smithpeder@gmail.com>
-
-COPY --from=builder /app/website/package.json .
-COPY --from=builder /app/website/yarn.lock .
-COPY --from=builder /app/website/build .
-RUN yarn --prod
+CMD ["yarn", "start"]
