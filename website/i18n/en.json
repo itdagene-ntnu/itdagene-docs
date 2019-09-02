@@ -17,6 +17,10 @@
       "infra/servers": {
         "title": "Servers"
       },
+      "utils/interest": {
+        "title": "Interesseskjema for itDAGENE",
+        "sidebar_label": "Interest-form"
+      },
       "utils/itbot": {
         "title": "Slack bot for itDagene",
         "sidebar_label": "Slack bot"

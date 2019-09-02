@@ -170,9 +170,9 @@ const Features = () => (
       },
       {
         content: '',
-        image: imgUrl('cloudflare.png'),
+        image: imgUrl('typescript.png'),
         imageAlign: 'top',
-        title: 'Cloudflare'
+        title: 'TypeScript'
       },
       {
         content: '',

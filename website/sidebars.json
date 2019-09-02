@@ -13,7 +13,8 @@
     "Utils": [
       "utils/voucher",
       "utils/itbot",
-      "utils/scripts"
+      "utils/scripts",
+      "utils/interest"
     ]
   },
   "infrastruktur": {
@@ -30,7 +31,8 @@
     "Utils": [
       "utils/voucher",
       "utils/itbot",
-      "utils/scripts"
+      "utils/scripts",
+      "utils/interest"
     ]
   },
   "utils": {
@@ -47,7 +49,8 @@
     "Utils": [
       "utils/voucher",
       "utils/itbot",
-      "utils/scripts"
+      "utils/scripts",
+      "utils/interest"
     ]
   }
 }
