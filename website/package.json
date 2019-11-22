@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "babel-eslint": "9",
-    "docusaurus": "^1.14.0",
+    "docusaurus": "^1.14.1",
     "eslint": "^5.12.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-config-react-app": "^3.0.6",
