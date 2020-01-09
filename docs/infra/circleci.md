@@ -25,10 +25,13 @@ CI has completed building the image, and its ready for usage.
 # Go to the server
 $ ssh itdagene
 
+# Change directory
+$ cd infra
+
 # Pull the new backend image
 $ docker pull itdagene/itdagene:prod
 # or pull the new frontend image
-$ docker pull odinuge/itdagene-webapp:prod
+$ docker pull itdagene/webapp:prod
 
 # Then you need to restart the conteiner running this image
 $ docker-compose up -d --force-recreate itdagene
