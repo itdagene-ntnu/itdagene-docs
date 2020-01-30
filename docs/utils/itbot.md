@@ -46,7 +46,7 @@ All supported scripts are located in `scripts/`
 
 - `@<role>` located in `roles.js`
 
-- `@<role> some text @<another role>` located in `roles.js` 
+- `@<role> some text @<another role>` located in `roles.js`
 
 - `itbot roles` located in `roles.js`
 
