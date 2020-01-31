@@ -37,7 +37,7 @@ class Footer extends React.Component {
             <a href={this.docUrl('website/frontend', this.props.language)}>
               Check out how the website is build.
             </a>
-            <a href={this.docUrl('infras/servers', this.props.language)}>
+            <a href={this.docUrl('infra/servers', this.props.language)}>
               Learn about the development operations.
             </a>
             <a href={this.docUrl('utils/voucher', this.props.language)}>

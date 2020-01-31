@@ -6,13 +6,16 @@ title: Backup
 Taking backups are important for itdagene as we store lots of information in our database and as static files. We use `cron` jobs to run backups at set intervals, and push them to `backblaze`.
 
 ### cron daemon
+
 We do are large backup at 00:00 every day. This is done using `cron` job. Currently the cron job runs the `backup.sh` script which is located at `/home/itdagene/infra/backup.sh`.
+
 ```zsh
 # View and edit cron jobs
 $ crontab -e
 ```
 
 ### rclone
+
 The backup is pushed to backblaze using `rclone`. Look through `backup.sh` to see what is backed up. rclone can hold multiple remotes, which is places it will push the files. Our config lies in `/home/itdagene/.config/rclone/rclone.conf`.
 
 > Output from `cat rclone.conf`

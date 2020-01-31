@@ -4,6 +4,7 @@ title: Backend
 ---
 
 Documentation for the backend section of itDAGENE. This involves the GraphQL API for `itdagene.no` and the admin interface for `admin.itdagene.no`
+
 > API and admin interface for itdagene.no & admin.itdagene.no
 
 ## GraphQL API
@@ -40,6 +41,7 @@ $ echo "from itdagene.settings.dev import *" > itdagene/settings/local.py
 ```
 
 Setup the admin interface
+
 ```zsh
 # Install all dependensies in the project
 $ yarn
@@ -50,7 +52,7 @@ $ yarn start
 ## Starting the app
 
 ```bash
-# Start all docker conteiners for the project
+# Start all docker containers for the project
 $ docker-compose up -d
 
 # Activate the venv. You need to do this every time your terminal restarts.
