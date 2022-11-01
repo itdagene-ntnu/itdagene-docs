@@ -99,6 +99,17 @@ $ yapf -ir itdagene                # Fix code formatting
 $ tox -e isort -e flake8 -e yapf   # Verify code style
 ```
 
+### Shell
+
+For testing purposes, it is sometimes useful to enter the server_shell
+
+```bash
+$ ssh itdagene@itdagene.no
+$ docker exec -t <itdagene container> sh
+$ python manage.py shell_plus
+$ print(User.objects.get(username="<username>"))  # Tip
+```
+
 ## Celery
 
 ```bash
