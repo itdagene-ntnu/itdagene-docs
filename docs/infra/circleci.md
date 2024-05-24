@@ -42,3 +42,20 @@ $ docker pull itdagene/webapp:prod
 $ docker-compose up -d --force-recreate itdagene
 $ docker-compose up -d --force-recreate webapp
 ```
+
+If you have updated any models in the backend you will need to migrate the database
+
+Run the following commands on the server when the new image is running
+
+```zsh
+# List all containers
+ds
+
+# Then copy id of container "itdagene"
+
+# Enter shell in the container ()
+docker exec -it <container_id> sh 
+
+# Migrate the database
+python manage.py migrate
+```
