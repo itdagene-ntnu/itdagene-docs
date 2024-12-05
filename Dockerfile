@@ -1,4 +1,4 @@
-FROM node:8.11.4
+FROM node:19.7.0
 MAINTAINER Peder Smith <smithpeder@gmail.com>
 
 WORKDIR /app/website
