@@ -14,7 +14,7 @@ Documentation for the backend section of itDAGENE. This involves the GraphQL API
 ## TL;DR
 
 - GraphQL API with [django-graphene]
-- Python 3.6 with Django
+- Python 3.7 with Django
 - Postgres for persistant storage
 - [Celery] (with redis-broker) for async tasks
 - CircleCI for continuous integration
@@ -24,7 +24,7 @@ Documentation for the backend section of itDAGENE. This involves the GraphQL API
 
 First make sure that you have the following software installed on your system:
 
-- Python 3.6
+- Python 3.7
 - Node.js and yarn
 - [docker] together with [docker-compose]
 
@@ -46,7 +46,7 @@ Setup the admin interface
 # Install all dependensies in the project
 $ yarn
 # Start the server
-$ yarn start
+$ yarn build
 ```
 
 ## Starting the app
